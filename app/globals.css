@@ -8,10 +8,46 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
+  --font-itel: var(--font-itel);
+
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1rem;
+  --text-sm: 0.75rem;
+  --text-sm--line-height: 1.25rem;
+  --text-md: 1rem;
+  --text-md--line-height: 1.5rem;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl: 1.5rem;
+  --text-xl--line-height: 2rem;
+  --text-2xl: 2rem;
+  --text-2xl--line-height: 2.5rem;
+  --text-3xl: 2.5rem;
+  --text-3xl--line-height: 3rem;
+  --text-4xl: 3rem;
+  --text-4xl--line-height: 3.5rem;
+  --text-5xl: 3.5rem;
+  --text-5xl--line-height: 4.5rem;
+  --text-6xl: 6rem;
+  --text-6xl--line-height: 7rem;
+
+  --color-primary-500: #ea0029;
+  --color-orange-500: #fc5100;
+  --color-pink-orange-500: #ff8672;
+  --color-pink-500: #f4436c;
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f9f9f9;
+  --color-neutral-100: #f1f1f2;
+  --color-neutral-200: #e6e7e8;
+  --color-neutral-300: #cccccc;
+  --color-neutral-400: #999999;
+  --color-neutral-500: #666666;
+  --color-neutral-600: #333333;
+  --color-neutral-700: #1f1f1f;
+  --color-neutral-800: #181818;
+  --color-neutral-900: #121212;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -22,5 +58,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), sans-serif;
 }
