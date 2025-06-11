@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DMSansVN } from "./fonts/dm-sans-vn";
 import { Itel } from "./fonts/itel";
 import "./globals.css";
+import { MainLayout } from "./layout/main-layout";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,9 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="dark" suppressHydrationWarning>
       <body className={`${DMSansVN.variable} ${Itel.variable} antialiased`}>
-        {children}
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   );
