@@ -61,8 +61,8 @@ export const HeaderAccordion = ({
               >
                 <Svg src={icon as string} className="text-2xl" />
               </Button>
-              <div className="text-base">
-                <p className="font-bold text-xl">{title}</p>
+              <div className="text-base tb:text-xl">
+                <p className="font-bold">{title}</p>
                 {desc && <p className="text-neutral-500 text-md">{desc}</p>}
               </div>
             </div>
