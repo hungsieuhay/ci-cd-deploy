@@ -15,8 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="dark" suppressHydrationWarning>
-      <body className={`${DMSansVN.variable} ${Itel.variable} antialiased`}>
+    <html lang="en" data-theme="dark">
+      <body
+        className={`${DMSansVN.variable} ${Itel.variable} antialiased`}
+        suppressHydrationWarning
+      >
         <MainLayout>{children}</MainLayout>
       </body>
     </html>

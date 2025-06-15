@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 export default function Home() {
@@ -10,7 +12,7 @@ export default function Home() {
           width={0}
           height={0}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="w-full aspect-auto object-cover"
+          className="w-full aspect-auto object-cover relative"
         />
       </section>
     </main>
